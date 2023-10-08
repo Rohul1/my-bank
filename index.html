@@ -12,10 +12,34 @@
         <h1 class="text-3xl text-center">My <span class="text-red-500 font-bold"> Bank</span>!!!</h1>
     </header>
     <main>
-        <section>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+        <section class="grid grid-cols-3 gap-4 w-3/4 mx-auto my-4">
+            <div class="bg-yellow-400 p-8 rounded-md">
+                <h3 class="text-3xl text-white">Deposit</h3>
+                <p class="text-5xl text-white">$<span id="Deposit-total">00</span></p>
+            </div>
+            <div class="bg-red-700 p-8 rounded-md">
+                <h3 class="text-3xl text-white">Withdraw</h3>
+                <p class="text-5xl text-white">$ <span id="Withdraw-total">00</span></p>
+            </div>
+            <div class="bg-blue-400 p-8 rounded-md">
+                <h3 class="text-3xl text-white">Balance</h3>
+                <p class="text-5xl text-white">$ <span id="Balance-total">00</span>00</p>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 gap-4 w-3/4 mx-auto  mt-10">
+            <div class="bg-green-700 p-8 rounded-md">
+                <h3 class="text-3xl text-white">Your Deposit</h3>
+                <input class="p-2" type="text" placeholder="$Amount you want to deposit"> <br>
+                <button class="bg-slate-800 w-1/4 rounded-md mt-4 p-2">Deposit</button>
+
+            </div>
+            <div class="bg-red-700 p-8 rounded-md">
+                <h3 class="text-3xl text-white">Your Withdraw</h3>
+                <input class="p-2 " type="text" placeholder="$Amount you want to withdraw"> <br>
+                <button class="bg-slate-800 w-1/4 rounded-md mt-4 p-2">Withdraw</button>
+
+            </div>
+
         </section>
     </main>
 </body>
